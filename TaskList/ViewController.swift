@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonTapped))
         navigationItem.rightBarButtonItem = addButton
+        addButton.tintColor = .systemRed
     }
     
     @objc private func addButtonTapped() {
@@ -68,6 +69,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
     }
 }
+
 
 private extension ViewController {
     func setupScene() {
