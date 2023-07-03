@@ -1,12 +1,25 @@
 import UIKit
 import SnapKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let searchText = searchController.searchBar.text else {
+            return
+        }
+    }
+    
      let tableView = UITableView()
      var tableName: [String] = []
+   // var filteredTableName: [String] = []
+    let searchController = UISearchController(searchResultsController: nil)
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Поиск"
+        navigationItem.searchController = searchController
         setupScene()
         makeConstraints()
         setupNavigationBar()
@@ -64,10 +77,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             tableView.beginUpdates()
             tableName.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
-            
         }
         
     }
+   
 }
 
 
