@@ -43,7 +43,7 @@ class ViewController: UIViewController {
     
 }
 
-extension ViewController: UITableViewDataSource {
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tableName.count
     }
@@ -69,7 +69,7 @@ extension ViewController: UITableViewDataSource {
 private extension ViewController {
     func setupScene() {
         tableView.dataSource = self
-        
+        tableView.delegate = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         view.addSubview(tableView)
     }
