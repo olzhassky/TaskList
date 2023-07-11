@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		635183F22A5D88CA00E2CBFB /* task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635183F12A5D88CA00E2CBFB /* task.swift */; };
 		63C18EAF2A51966100E9EB07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C18EAE2A51966100E9EB07 /* AppDelegate.swift */; };
 		63C18EB12A51966100E9EB07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C18EB02A51966100E9EB07 /* SceneDelegate.swift */; };
 		63C18EB32A51966100E9EB07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C18EB22A51966100E9EB07 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		635183F12A5D88CA00E2CBFB /* task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = task.swift; sourceTree = "<group>"; };
 		63C18EAB2A51966100E9EB07 /* TaskList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C18EAE2A51966100E9EB07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63C18EB02A51966100E9EB07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				63C18EAE2A51966100E9EB07 /* AppDelegate.swift */,
 				63C18EB02A51966100E9EB07 /* SceneDelegate.swift */,
 				63C18EB22A51966100E9EB07 /* ViewController.swift */,
+				635183F12A5D88CA00E2CBFB /* task.swift */,
 				63C18EB72A51966300E9EB07 /* Assets.xcassets */,
 				63C18EB92A51966300E9EB07 /* LaunchScreen.storyboard */,
 				63C18EBC2A51966300E9EB07 /* Info.plist */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				635183F22A5D88CA00E2CBFB /* task.swift in Sources */,
 				63C18EB32A51966100E9EB07 /* ViewController.swift in Sources */,
 				63C18EAF2A51966100E9EB07 /* AppDelegate.swift in Sources */,
 				63C18EB12A51966100E9EB07 /* SceneDelegate.swift in Sources */,
